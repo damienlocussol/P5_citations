@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Générateur de citations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="main">
+	<div id="head">
+		<p>Générateur de citations </p>
+		<p id="expand">+</p>
+	</div>
+
+	<div id="container">
+		<div id="myForm">
+			<form id="form1">
+				<p>
+					<label for="type">Choisissez une citation :</label><br/>
+				    <select name="type" id="type">
+				    	<option value=1>Citation classique</option>
+				    	<option value=2>Hum !</option>
+				    	<option value=3>Citation noble</option>
+				    </select>
+				</p>
+				<p id="radios">
+				    <span>Combien en voulez-vous :</span><br/>
+					<input type="checkbox" id="nb1" name="nb" value=1 checked/><label for="nb1">1</label>
+					<input type="checkbox" id="nb2" name="nb" value=2 /><label for="nb2">2</label>
+					<input type="checkbox" id="nb3" name="nb" value=3 /><label for="nb3">3</label>
+					<input type="checkbox" id="nb4" name="nb" value=4 /><label for="nb4">4</label>
+					<input type="checkbox" id="nb5" name="nb" value=5 /><label for="nb5">5</label>
+				</p>
+				<p>
+					<input type="submit" value="Voyons voir ce que ça donne !"/>
+				</p>
+			</form>
+		</div>
+		<div id="content"></div>
+	</div>
+	<div id="endMessage"></div>
+</div>
+<script src="citations_web.js"></script>
+</body>
+</html>

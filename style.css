@@ -1,0 +1,141 @@
+@import url("fonts/museo/stylesheet.css");
+
+*{
+	margin:0;
+}
+
+a, a:hover, a:active, a:visited{
+	text-decoration: none;
+	color:#222;
+}
+
+body {
+	margin:auto;
+	background-color: #ddd;
+	font-family:'museo_slab500',arial,sans-serif;
+	font-size:25px;
+	color:#222;
+	text-transform: uppercase;
+	width:100%;
+}
+
+#main{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+#main > div{
+	margin: auto;
+	width:90%;
+}
+
+#container{
+	display:none;
+}
+
+#head p{
+	flex:1;
+}
+
+#expand{
+	cursor:pointer;
+}
+
+#myForm{
+	border-bottom: 5px solid #999;
+	font-size:12px;
+	padding:5px 0px 15px 0px;
+} 
+
+#head{
+	border-bottom: 5px solid #999;
+	padding-bottom:10px;
+	font-weight: 700;
+	display:flex;
+}
+
+#form1{
+	display: flex;
+}
+#form1 p{
+	width:30%;
+	flex : 1;
+	margin-right: 20px;
+	line-height: 30px;
+}
+
+#form1 p:last-child{
+	align-self: flex-end;
+	flex: 1.5;
+	margin-right: 0px;
+}
+
+select, input[type="submit"]{
+	width:100%;
+	height:40px;
+	font-family:'museo_slab500',arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: left;
+	color:#eee;
+	outline: none;
+	cursor:pointer;
+}
+
+select{
+	background-color: rgb(229,53,45);
+	border:none;
+/*	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+}
+
+input[type="submit"]{
+	background-color: rgb(229,53,45);
+	border:none;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+#endMessage{
+	font-size: 15px;
+	padding-top:20px;
+}
+
+.blocCitation{
+	margin-top:20px;
+	background-color: #eee;
+	font-size: 22px;
+	padding:10px;
+}
+
+.auteur{
+	font-size: 15px;
+	color:#999;
+}
+
+.ajout{
+	color:rgb(40,140,140);
+}
+
+#radios input {
+  display:none;
+}
+
+#radios label {
+  display: inline-block;
+  position: relative;
+  color: #eee;
+  width:40px;
+  height:40px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #aaa;
+  line-height: 40px;
+}
+
+#radios input:checked + label {
+  background-color: rgb(229,53,45);
+}
